@@ -10,6 +10,7 @@ const iFly = new IFly('58a3f86f', path.join(__dirname, '..', 'libmsc.so'));
 
 describe('Base tests', function () {
     it('Recognize example wav.', function (done) {
+        this.timeout(15000);
         let session = iFly.createIsrSession();
         session.on('data', (data) => {
             console.log(data);
@@ -29,6 +30,7 @@ describe('Base tests', function () {
     });
 
     it('Recognize another example wav.', function (done) {
+        this.timeout(15000);
         let session = iFly.createIsrSession();
         session.on('data', (data) => {
             console.log(data);
