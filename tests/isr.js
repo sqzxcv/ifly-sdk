@@ -16,7 +16,7 @@ describe('Base tests', function () {
         });
         session.on('result', (result) => {
             console.log('Result:', result);
-            expect(result).to.be.equal('中美数控。');
+            expect(result).to.contain('中美');
             done();
         });
         let stream = fs.createReadStream(path.join(__dirname, '..', 'iflytek02.wav'));
