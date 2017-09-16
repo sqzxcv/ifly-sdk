@@ -5,3 +5,5 @@
 
 This is an SDK for iFly services, build by iFly Linux SDK with ffi.
 Currently support ISR service only.
+
+语音识别接口封装
